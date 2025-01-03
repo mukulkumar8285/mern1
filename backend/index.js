@@ -8,13 +8,7 @@ const app = express();
 const PORT = process.env.PORT;
 
 app.use(express.json());
-app.use(
-  cors({
-    origin: "https://mern1-ua8i.vercel.app",
-    methods: ["GET", "POST", "PUT", "DELETE"], // Allow the specified methods
-    allowedHeaders: ["Content-Type", "Authorization"],
-  })
-);
+app.use(cors());
 
 mongoose
   .connect(process.env.MONGO_DB)
