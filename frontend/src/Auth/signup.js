@@ -23,7 +23,7 @@ function Signup() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://mern1-delta.vercel.app/signup",
+        "https://mern1-delta.vercel.app/auth/v1/signup",
         formData
       );
     navigate("/login");

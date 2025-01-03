@@ -20,7 +20,7 @@ function Login() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://mern1-delta.vercel.app/login",
+        "https://mern1-delta.vercel.app/auth/v1/login",
         formData
       );
       localStorage.setItem("authorization" , response.data.token);
