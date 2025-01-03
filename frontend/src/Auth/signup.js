@@ -23,7 +23,7 @@ function Signup() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:3000/auth/v1/signup",
+        "https://mern1-delta.vercel.app/signup",
         formData
       );
     navigate("/login");

@@ -15,7 +15,7 @@ const Dashboard = () => {
 
   const fetchExpenses = () => {
     axios
-      .get("http://localhost:3000/user/v1/", {
+      .get("https://mern1-delta.vercel.app/", {
         headers: { Authorization: localStorage.getItem("authorization") },
       })
       .then((response) => setExpenses(response.data))
@@ -24,7 +24,7 @@ const Dashboard = () => {
 
   const handleDelete = (id) => {
     axios
-      .delete(`http://localhost:3000/user/v1/${id}`, {
+      .delete(`https://mern1-delta.vercel.app/${id}`, {
         headers: { Authorization: localStorage.getItem("authorization") },
       })
       .then(() => {
@@ -39,7 +39,7 @@ const Dashboard = () => {
     const expenseData = { amount, description, category, date };
 
     axios
-      .post("http://localhost:3000/user/v1/", expenseData, {
+      .post("https://mern1-delta.vercel.app/", expenseData, {
         headers: { Authorization: localStorage.getItem("authorization") },
       })
       .then(() => {
