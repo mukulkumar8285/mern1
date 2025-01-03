@@ -10,7 +10,7 @@ const PORT = process.env.PORT;
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://mern1-ua8i.vercel.app/",
+    origin: "https://mern1-ua8i.vercel.app",
   })
 );
 
