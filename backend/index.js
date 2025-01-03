@@ -10,7 +10,7 @@ const PORT = process.env.PORT;
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:3002",
+    origin: "https://mern1-ua8i.vercel.app/",
   })
 );
 
