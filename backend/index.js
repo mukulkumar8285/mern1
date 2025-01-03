@@ -11,6 +11,8 @@ app.use(express.json());
 app.use(
   cors({
     origin: "https://mern1-ua8i.vercel.app",
+    methods: ["GET", "POST", "PUT", "DELETE"], // Allow the specified methods
+    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
 
